@@ -25,7 +25,7 @@ void awardfind::on_stu_award_querypushButton_clicked()
 
 
     if(id.compare("")==0)
-    QMessageBox::information(this, "警告", "请输入学号");
+        QMessageBox::information(this, "警告", "请输入学号");
 
     QSqlDatabase db;
     if(QSqlDatabase::contains("qt_sql_default_connection"))
